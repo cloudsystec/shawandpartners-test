@@ -65,7 +65,7 @@ function Details({ match }) {
         <Avatar className={classes.large} src={userData.avatar_url} ></Avatar>
         <div className={classes.div} >
           <div className={classes.divinner} ><b>Id: </b>{userData.id}</div>
-          <div className={classes.divinner} ><b>Repo: </b>{userData.profile_url}</div>
+          <div className={classes.divinner} ><b>Repo: </b><a  target="_blank" href={userData.profile_url}>{userData.profile_url}</a></div>
           <div className={classes.divinner} ><b>Created At: </b>{userData.created_at}</div>
         </div>
       </Grid>

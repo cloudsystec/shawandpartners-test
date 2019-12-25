@@ -58,7 +58,7 @@ exports.details = (req, res, next) => {
             login: body.login,
             id: body.id,
             avatar_url: body.avatar_url,
-            profile_url: body.url,
+            profile_url: body.html_url,
             created_at: body.created_at,
         };
 
